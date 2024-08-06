@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Katherine Carver-Hardy">
+    <meta name="description" content="Homepage for my webpage profile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $('.nav-tabs a').click(function(){
+            $(this).tab('show');
+        })
+        $('.nav-tabs a[href="#"]').tab('show')
+
+        $('.nav-tabs a:work').tab('show')
+
+        $('.nav-tabs a:contactInfo').tab('show')
+    </script>
+
+    <title>My Profile</title>
+    <style>
+        .bg-1 {
+          background-color: #5BCEFA; /* Sky Blue */
+          color: #474e5d;
+        }
+        .bg-2 {
+          background-color: #474e5d; /* Dark Blue */
+          color: #F5A9B8;
+        }
+        .bg-3 {
+          background-color: #ffffff; /* White */
+          color: #555555;
+          
+        }
+        .container-fluid {
+        padding: 35px;
+        }
+        </style>
+</head>
+<body class = "container-fluid bg-1">      
+    <section>
+        <div class="container-fluid text-center">
+            <h3></h3>
+            <img src="images/profilepic.jpg" class="img-circle" alt="Me">
+            <h3>Katherine Carver-Hardy</h3>
+            <h4>She/Her</h4>
+        </div>
+        <div class="container-fluid bg-2 text-center">
+            <h1 class="display-4 fw-bold text-body-emphasis">About Me</h1>
+            <p>
+                Who am I? You sure you want to know?
+                The story of my life is not for the faint of heart.
+                If somebody said it was a happy little tale...
+                if somebody told you I was just your average ordinary guy, not a care in the world...
+                somebody lied.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid bg-2 text-center">
+            <div>
+                <p class="lead mb-4"></p>
+                <!-- Buttons -->
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="btn btn-lg px-4">
+                        <a data-toggle="tab" href="#workExperience" class="nav-link active button" aria-current="page" style="color:#5BCEFA">
+                            Work Experience</a>
+                    </li>
+                    <li class="btn btn-lg px-4">
+                        <a data-toggle="tab" href="#education" class="nav-link"  style="color:#5BCEFA">
+                            Education</a>
+                    </li>
+                    <li class="btn btn-lg px-4">
+                        <a data-toggle="tab" href="#skills" class="nav-link" style="color:#5BCEFA">
+                            Skills</a>
+                    </li>
+                    <li class="btn btn-lg px-4">
+                        <a data-toggle="tab" href="#hobbies" class="nav-link" style="color:#5BCEFA">
+                            Hobbies</a>
+                    </li>
+                    <li class="btn btn-lg px-4" > 
+                        <a data-toggle="tab" href="#contactInfo" class="nav-link" style="color:#5BCEFA">
+                            Contact Info</a>
+                    </li>
+                </ul>
+                <!-- Content -->
+                <div class = "tab-content" id="myTabs">
+                    <!-- Skills -->
+                    <div class="container-fluid tab-pane fade" id="skills">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>Programming</h3>
+                                <p class="lead mb-4">Java</p>
+                                <p class="lead mb-4">C/C++/C#</p>
+                                <p class="lead mb-4">Visual Basic</p>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3></h3>
+                            </div>
+                            
+                            <div class="col-sm-4" >
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div class="container-fluid tab-pane fade" id="education">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>University of Exeter</h3>
+                                <p class="lead mb-4">Java</p>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>Colchester Royal Grammar School</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hobbies -->
+                    <div class="container-fluid tab-pane fade" id="hobbies">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>TableTop RolePlayingGames</h3>
+                                <p class="lead mb-4">Dungeons and Dragons</p>
+                                <p class="lead mb-4">Call of Cuthullu</p>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>Sports</h3>
+                                <p class="lead mb-4">Archery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work -->
+                    <div class="container-fluid tab-pane fade show active" id="workExperience">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>Sparta Global</h3>
+                                <p class="lead mb-4">Junior Java Developer</p>
+                                <p class="lead mb-4">June 2024 - Present</p>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>HM Land Registry</h3>
+                                <p class="lead mb-4">Customer Service Agent</p>
+                                <p class="lead mb-4">January 2023 - March 2023</p>
+                            </div>
+                            
+                            <div class="col-sm-4" >
+                                <h3>Exeter Market Place</h3>
+                                <p class="lead mb-4">Retail Staff</p>
+                                <p class="lead mb-4">Novemeber 2021 - August 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div class="container-fluid row tab-pane fade" id="contactInfo">
+                        <!-- Contact Details -->
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>Work Email</h3>
+                                <h4 class="text-muted">KCarver-Hardy@SpartaGlobal.com</h4>
+                                <h1></h1>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>Work Phone</h3>
+                                <h4 class="text-muted">Currently Unavailable</h4>
+                            </div>
+                        </div>
+                        <!-- Socials -->
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>My LinkedIn</h3>
+                                <a class="lead mb-4" target="_blank" href="https://www.linkedin.com/in/katherine-carver-hardy-31b81816b/">
+                                    <img  alt = "LinkedInLogo" src = "images/LinkedInlogo.png" width = "100px"
+                                target="_blank" href="https://www.linkedin.com/in/katherine-carver-hardy-31b81816b/">
+                                </a>
+                            </div>
+
+                            <div class="col-sm-4 " >
+                                <h3>My GitHub</h3>
+                                <a class="lead mb-4" target="_blank" href="https://github.com/katabeth">
+                                    <img  alt = "GitHubLogo" src = "images/GitHublogo.png" width = "100px"
+                                    target="_blank" href="https://github.com/katabeth">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Calendar -->
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3>Contact Hours</h3>
+                                <h4>Don't</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
