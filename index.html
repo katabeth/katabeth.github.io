@@ -6,9 +6,10 @@
     <meta name="author" content="Katherine Carver-Hardy">
     <meta name="description" content="Homepage for my webpage profile">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script>
         $('.nav-tabs a').click(function(){
             $(this).tab('show');
@@ -28,16 +29,24 @@
         }
         .bg-2 {
           background-color: #474e5d; /* Dark Blue */
-          color: #F5A9B8;
+          color: #F5A9B8; /* Baby Pink */
         }
         .bg-3 {
           background-color: #ffffff; /* White */
           color: #555555;
           
         }
+        .bg-4{
+            background-color:#6989d1; /* Different Blue */
+            color: #F5A9B8;
+        }
         .container-fluid {
         padding-top: 35px;
         padding-bottom: 20px;
+        }
+        .table-fluid{
+            padding-left: 2%;
+            padding-right: 2%;
         }
         </style>
 </head>
@@ -116,7 +125,7 @@
                     <!-- Education -->
                     <div class="container-fluid tab-pane fade text-center" id="education">
                         <div class = "row justify-content-center">
-                            <div class="col-sm-4" >
+                            <div class="col-sm-2" >
                                 <h3>University of Exeter</h3>
                                 <p class="lead mb-4">
                                     <strong>BEng (Hons) Electronic Engineering</strong>
@@ -124,8 +133,12 @@
                                     <i>September 2018 - August 2022</i>
                                 </p>
                             </div>
-
-                            <div class="col-sm-4 " >
+                            <div class ="col-sm-2">
+                                <div class="d-flex" style="height: 200px;">
+                                    <div class="vr"></div>
+                                </div> 
+                            </div>
+                            <div class="col-sm-3" >
                                 <h3>Colchester Royal Grammar School</h3>
                                 <div class = "row justify-content-center">
                                     <div class = "col-sm-5">
@@ -160,6 +173,7 @@
                                             </div>
                                         </p>
                                     </div>
+                                    
                                     <div class = "col-sm-5">
                                         <p class="lead mb-4">
                                             <strong>GCSEs</strong>
