@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+    <title>My Profile</title>
     <meta charset="UTF-8">
     <meta name="author" content="Katherine Carver-Hardy">
     <meta name="description" content="Homepage for my webpage profile">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script>
@@ -19,9 +20,9 @@
         $('.nav-tabs a:work').tab('show')
 
         $('.nav-tabs a:contactInfo').tab('show')
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
     </script>
-
-    <title>My Profile</title>
     <style>
         .bg-1 {
           background-color: #5BCEFA; /* Sky Blue */
@@ -52,10 +53,14 @@
 </head>
 <body class = "container-fluid bg-1 justify-content-center">
     <section>
-        <div class="text-center">Banner WIP
-
-        </div>
-        
+        <div class="container">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+            <div id="demo" class="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
     </section>      
     <section>
         <div class="container-fluid text-center">
@@ -307,46 +312,93 @@
                     <div class="container-fluid tab-pane fade text-center show active" id="workExperience">
                         <div class = "row justify-content-center">
                             <div class="col-sm-4" >
-                                <h3>Sparta Global</h3>
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#sparta">
+                                    <h3>Sparta Global</h3>
+                                </button>
                                 <p class="lead mb-4">
-                                    <strong>Junior Java Developer</strong>
-                                    <br>
-                                        Training and Learning
+                                    <strong>Java Developer</strong>
                                     <br>
                                     <i>June 2024 - Present</i>
-                                </p>
+                                    <div id="sparta" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            What did I do there?
+                                        </div>
+                                    </div>
+                                    </p>
                                 <hr>
                             </div>
 
                             <div class="col-sm-4 " >
-                                <h3>HM Land Registry</h3>
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#evri">
+                                    <h3>Evri</h3>
+                                </button>
                                 <p class="lead mb-4">
-                                    <strong>Customer Service Agent</strong>
+                                    <strong>Courier</strong>
                                     <br>
-                                        A temp agent with Brook Street
-                                    <br>
-                                    <i>January 2023 - March 2023</i>
+                                    <i>July 2023 - September 2023</i>
+                                    <div id="evri" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Collecting and prioritising delivery of packs
+                                             and parcels from a depot to their written destination
+                                        </div>
+                                    </div>
                                 </p>
                                 <hr>
                             </div>
                             
                             <div class="col-sm-4" >
-                                <h3>Exeter Market Place</h3>
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#landRegistry">
+                                    <h3>HM Land Registry</h3>
+                                </button>
                                 <p class="lead mb-4">
-                                    <strong>Retail Staff</strong>
+                                    <strong>Temporary Customer Service Agency Staff</strong>
                                     <br>
-                                        Cashier, Cleaner and Stocker
-                                    <br>
-                                    <i>Novemeber 2021 - August 2022</i>
+                                    <i>January 2023 - March 2023</i>
+                                    <div id="landRegistry" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Receiving, allocating and responding to customer emails
+                                             using my judgement to prioritise.
+                                             <br>
+                                            Participating in and aiding with new computer programs in the
+                                             workplace by providing useful feedback and testing.
+                                        </div>
+                                    </div>
                                 </p>
                                 <hr>
                             </div>
                         </div>
                         <div class = "row justify-content-center">
                             <div class="col-sm-4" >
-                                <h3>Sparta Global</h3>
-                                <p class="lead mb-4">Junior Java Developer</p>
-                                <p class="lead mb-4">June 2024 - Present</p>
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#exeterMarket">
+                                    <h3>Exeter Market Place</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Retail Staff</strong>
+                                    <br>
+                                    <i>Novemeber 2021 - August 2022</i>
+                                    <div id="exeterMarket" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Cashier, Cleaner and Stocker
+                                        </div>
+                                    </div>
+                                </p>
+                                <hr>
+                            </div>
+                            <div class="col-sm-4" >
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#exeterMarket">
+                                    <h3>Exeter Market Place</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Retail Staff</strong>
+                                    <br>
+                                    <i>Novemeber 2021 - August 2022</i>
+                                    <div id="exeterMarket" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Cashier, Cleaner and Stocker
+                                        </div>
+                                    </div>
+                                </p>
+                                <hr>
                             </div>
                         </div>
                     </div>
