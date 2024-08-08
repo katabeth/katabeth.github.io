@@ -62,8 +62,9 @@
             <h4>She/Her</h4>
         </div>
         <div class="container-fluid bg-2 text-center">
-            <h1 class="display-4" style="color: #F5A9B8;">About Me</h1>
-            <p>
+            <h1 class="display-4">About Me</h1>
+            <hr>
+            <p class ="lead mb-2">
                 Who am I? You sure you want to know?
                 The story of my life is not for the faint of heart.
                 If somebody said it was a happy little tale...
@@ -100,23 +101,98 @@
                 </ul>
                 <!-- Content -->
                 <div class = "tab-content" id="myTabs">
-                    <!-- Skills -->
-                    <div class="container-fluid tab-pane fade text-center" id="skills">
+                    <!-- Work -->
+                    <div class="container-fluid tab-pane fade text-center show active" id="workExperience">
                         <div class = "row justify-content-center">
                             <div class="col-sm-4" >
-                                <h3 class="display-5">Programming</h3>
-                                <p class="lead mb-4">Java</p>
-                                <p class="lead mb-4">C/C++/C#</p>
-                                <p class="lead mb-4">Visual Basic</p>
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#sparta">
+                                    <h3>Sparta Global</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Java Developer</strong>
+                                    <br>
+                                    <i>June 2024 - Present</i>
+                                    <div id="sparta" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            What did I do there?
+                                        </div>
+                                    </div>
+                                    </p>
+                                <hr>
                             </div>
 
-                            <!-- <div class="col-sm-4" >
-                                <h3></h3>
+                            <div class="col-sm-4 " >
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#evri">
+                                    <h3>Evri</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Courier</strong>
+                                    <br>
+                                    <i>July 2023 - September 2023</i>
+                                    <div id="evri" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Collecting and prioritising delivery of packs
+                                             and parcels from a depot to their written destination
+                                        </div>
+                                    </div>
+                                </p>
+                                <hr>
                             </div>
                             
                             <div class="col-sm-4" >
-                                <h3></h3>
-                            </div> -->
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#landRegistry">
+                                    <h3>HM Land Registry</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Temporary Customer Service Agency Staff</strong>
+                                    <br>
+                                    <i>January 2023 - March 2023</i>
+                                    <div id="landRegistry" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Receiving, allocating and responding to customer emails
+                                             using my judgement to prioritise.
+                                             <br>
+                                            Participating in and aiding with new computer programs in the
+                                             workplace by providing useful feedback and testing.
+                                        </div>
+                                    </div>
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#exeterMarket">
+                                    <h3>Exeter Market Place</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Retail Staff</strong>
+                                    <br>
+                                    <i>Novemeber 2021 - August 2022</i>
+                                    <div id="exeterMarket" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Cashier, Cleaner and Stocker
+                                        </div>
+                                    </div>
+                                </p>
+                                <hr>
+                            </div>
+                            <div class="col-sm-4" >
+                                <button type="button" class="btn" data-toggle="collapse" data-target="#exeterMarket">
+                                    <h3>Exeter Market Place</h3>
+                                </button>
+                                <p class="lead mb-4">
+                                    <strong>Retail Staff</strong>
+                                    <br>
+                                    <i>Novemeber 2021 - August 2022</i>
+                                    <div id="exeterMarket" class="collapse">
+                                        <div class="card card-body bg-4">
+                                            Cashier, Cleaner and Stocker
+                                        </div>
+                                    </div>
+                                </p>
+                                <hr>
+                            </div>
                         </div>
                     </div>
                     <!-- Education -->
@@ -292,6 +368,25 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Skills -->
+                    <div class="container-fluid tab-pane fade text-center" id="skills">
+                        <div class = "row justify-content-center">
+                            <div class="col-sm-4" >
+                                <h3 class="display-5">Programming</h3>
+                                <p class="lead mb-4">Java</p>
+                                <p class="lead mb-4">C/C++/C#</p>
+                                <p class="lead mb-4">Visual Basic</p>
+                            </div>
+
+                            <!-- <div class="col-sm-4" >
+                                <h3></h3>
+                            </div>
+                            
+                            <div class="col-sm-4" >
+                                <h3></h3>
+                            </div> -->
+                        </div>
+                    </div>
                     <!-- Hobbies -->
                     <div class="container-fluid tab-pane fade text-center" id="hobbies">
                         <div class = "row justify-content-center">
@@ -304,100 +399,6 @@
                             <div class="col-sm-4 " >
                                 <h3>Sports</h3>
                                 <p class="lead mb-4">Archery</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work -->
-                    <div class="container-fluid tab-pane fade text-center show active" id="workExperience">
-                        <div class = "row justify-content-center">
-                            <div class="col-sm-4" >
-                                <button type="button" class="btn" data-toggle="collapse" data-target="#sparta">
-                                    <h3>Sparta Global</h3>
-                                </button>
-                                <p class="lead mb-4">
-                                    <strong>Java Developer</strong>
-                                    <br>
-                                    <i>June 2024 - Present</i>
-                                    <div id="sparta" class="collapse">
-                                        <div class="card card-body bg-4">
-                                            What did I do there?
-                                        </div>
-                                    </div>
-                                    </p>
-                                <hr>
-                            </div>
-
-                            <div class="col-sm-4 " >
-                                <button type="button" class="btn" data-toggle="collapse" data-target="#evri">
-                                    <h3>Evri</h3>
-                                </button>
-                                <p class="lead mb-4">
-                                    <strong>Courier</strong>
-                                    <br>
-                                    <i>July 2023 - September 2023</i>
-                                    <div id="evri" class="collapse">
-                                        <div class="card card-body bg-4">
-                                            Collecting and prioritising delivery of packs
-                                             and parcels from a depot to their written destination
-                                        </div>
-                                    </div>
-                                </p>
-                                <hr>
-                            </div>
-                            
-                            <div class="col-sm-4" >
-                                <button type="button" class="btn" data-toggle="collapse" data-target="#landRegistry">
-                                    <h3>HM Land Registry</h3>
-                                </button>
-                                <p class="lead mb-4">
-                                    <strong>Temporary Customer Service Agency Staff</strong>
-                                    <br>
-                                    <i>January 2023 - March 2023</i>
-                                    <div id="landRegistry" class="collapse">
-                                        <div class="card card-body bg-4">
-                                            Receiving, allocating and responding to customer emails
-                                             using my judgement to prioritise.
-                                             <br>
-                                            Participating in and aiding with new computer programs in the
-                                             workplace by providing useful feedback and testing.
-                                        </div>
-                                    </div>
-                                </p>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class = "row justify-content-center">
-                            <div class="col-sm-4" >
-                                <button type="button" class="btn" data-toggle="collapse" data-target="#exeterMarket">
-                                    <h3>Exeter Market Place</h3>
-                                </button>
-                                <p class="lead mb-4">
-                                    <strong>Retail Staff</strong>
-                                    <br>
-                                    <i>Novemeber 2021 - August 2022</i>
-                                    <div id="exeterMarket" class="collapse">
-                                        <div class="card card-body bg-4">
-                                            Cashier, Cleaner and Stocker
-                                        </div>
-                                    </div>
-                                </p>
-                                <hr>
-                            </div>
-                            <div class="col-sm-4" >
-                                <button type="button" class="btn" data-toggle="collapse" data-target="#exeterMarket">
-                                    <h3>Exeter Market Place</h3>
-                                </button>
-                                <p class="lead mb-4">
-                                    <strong>Retail Staff</strong>
-                                    <br>
-                                    <i>Novemeber 2021 - August 2022</i>
-                                    <div id="exeterMarket" class="collapse">
-                                        <div class="card card-body bg-4">
-                                            Cashier, Cleaner and Stocker
-                                        </div>
-                                    </div>
-                                </p>
-                                <hr>
                             </div>
                         </div>
                     </div>
